@@ -26,13 +26,17 @@ public class Main {
 		int rectX2 = sc.nextInt();
 		int rectY2 = sc.nextInt();
 		
-		// 제공된 메소드 인자 자료형이 정수형이라서 의도 파악이 안됩니다.
-		// 수정 부탁드립니다.
+		// 해당 입력한 두 점으로 이루어진 직사각형을 이루는 4개의 꼭짓점이 제공된 직사각형 내에 있는지 여부를 검사한다.
 		if(inRect(rectX1, rectY1, 100, 100, 200, 200)) {
 			flag++;
 		}
-		
 		if(inRect(rectX2, rectY2, 100, 100, 200, 200)) {
+			flag++;
+		}
+		if(inRect(rectX1, rectY2, 100, 100, 200, 200)) {
+			flag++;
+		}
+		if(inRect(rectX2, rectY1, 100, 100, 200, 200)) {
 			flag++;
 		}
 		
