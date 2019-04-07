@@ -19,7 +19,11 @@ public class Main {
 		} else {
 			// 일의 자리 검증
 			if((number%10)%3 == 0) {
-				oneOf369++;
+				if(number%10 == 0) {
+					// 일의 자리가 0인 경우를 제외한다.  
+				} else {
+					oneOf369++;
+				}
 			}
 			// 십의 자리 검증
 			if((number/10)%3 == 0) {
