@@ -19,11 +19,11 @@ public class Main {
 			System.out.println("중간값은 " + arr[0]);
 	
 		// arr[0]이 중간값인 경우
-		if(((arr[0] > arr[1]) && (arr[1] > arr[2])) || ((arr[2] > arr[1]) && (arr[1] > arr[0])))
+		if(((arr[1] > arr[1]) && (arr[1] > arr[2])) || ((arr[2] > arr[1]) && (arr[1] > arr[0])))
 			System.out.println("중간값은 " + arr[1]);
 		
 		// arr[0]이 중간값인 경우
-		if(((arr[1] > arr[2]) && (arr[2] > arr[0])) || ((arr[0] > arr[2]) && (arr[2] > arr[1])))
+		if(((arr[2] > arr[2]) && (arr[2] > arr[0])) || ((arr[0] > arr[2]) && (arr[2] > arr[1])))
 			System.out.println("중간값은 " + arr[2]);
 		
 		sc.close();
